@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Informacje - Zermatt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Informacje o Zermatt</h1>
+    <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="informacje.html">Informacje</a>
+    </nav>
+</header>
+
+<main>
+<section>
+    <h2>Podstawowe informacje</h2>
+    <p><strong>Kraj:</strong> Szwajcaria</p>
+    <p><strong>Region:</strong> Valais</p>
+    <p><strong>Słynna góra:</strong> Matterhorn</p>
+    <p><strong>Atrakcje:</strong> narciarstwo, trekking, kolej Gornergrat</p>
+    <p>Po wiecej informacji zapraszam <a href="https://pl.wikipedia.org/wiki/Zermatt"><strong>tutaj</strong></a></p>
+
+    <h2>Quiz – Czy znasz Zermatt?</h2>
+
+    <p>1. W jakim kraju znajduje się Zermatt?</p>
+    <button onclick="sprawdzOdpowiedz(1)">Francja</button>
+    <button onclick="sprawdzOdpowiedz(2)">Szwajcaria</button>
+
+    <p>2. Jak nazywa się słynna góra nad Zermatt?</p>
+    <button onclick="sprawdzOdpowiedz(3)">Mont Blanc</button>
+    <button onclick="sprawdzOdpowiedz(4)">Matterhorn</button>
+
+    <p id="wynik"></p>
+</section>
+</main>
+
+<footer>
+    <p>Moje wymarzone miejsce na wakacje – projekt</p>
+    <img src="Obrazy/CHE_Zermatt_COA.png" 
+    alt="Herb" class="herb">
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

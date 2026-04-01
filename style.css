@@ -1,0 +1,90 @@
+/* Układ strony – footer zawsze na dole */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #e6f2ff);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Header */
+header {
+    background: #ffffff;
+background: linear-gradient(27deg, rgba(255, 255, 255, 1) 37%, rgba(0, 98, 255, 1) 43%, rgba(0, 98, 255, 1) 89%, rgba(255, 247, 0, 1) 97%, rgba(255, 255, 255, 1) 99%);
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    color: black;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sekcja */
+section {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Przyciski */
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    background-color: #b30000;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #001f3f;
+}
+
+/* Galeria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Slider */
+.slider img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #b30000;
+    color: white;
+    padding: 15px 30px;
+    display: flex;              
+    justify-content: space-between;
+    align-items: center;
+}
+
+.herb {
+    width: 40px;
+    height: auto;
+}
+a {
+    color: black;
+}
