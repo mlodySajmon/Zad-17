@@ -10,8 +10,6 @@ function pokazCiekawostke() {
     const losowa = Math.floor(Math.random() * ciekawostki.length);
     document.getElementById("ciekawostka").innerText = ciekawostki[losowa];
 }
-
-// Tablica zdjęć
 let zdjecia = [
     "Obrazy/1.jpg",
     "Obrazy/2.jpg",
@@ -20,23 +18,15 @@ let zdjecia = [
     "Obrazy/5.jpg",
     "Obrazy/baner1.jpg",
 ];
-
-// Aktualny numer zdjęcia
 let numer = 0;
-
-// Funkcja następnego zdjęcia
 function nastepne(){
     numer = (numer + 1) % zdjecia.length;
     document.getElementById("slider").src = zdjecia[numer];
 }
-
-// Funkcja poprzedniego zdjęcia
 function poprzednie(){
     numer = (numer - 1 + zdjecia.length) % zdjecia.length;
     document.getElementById("slider").src = zdjecia[numer];
 }
-//Quiz
-
 let punkty = 0;
 
 function sprawdzOdpowiedz(nr) {
